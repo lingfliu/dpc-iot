@@ -2,7 +2,7 @@
 Declarative protocol connectivity of IoT
 
 # Terminologies
-
+## Components of IoT
 1. Node: a device with application connectivity and protocol regulations
 2. Gateway: a device connect the nodes, extract and handle the data in higher-lever abstraction
 3. Declartor: a unit hold the protocol, map the data and process
@@ -17,6 +17,11 @@ Declarative protocol connectivity of IoT
 7. Stage: equivalents of messages in a process
 5. Filter: the pre- / post- processing of the message
 6. Map: a type-data mapping
+
+# Design principles
+1. Loop-less
+2. No ambigous declaration
+3. Structured declaration
 
 # Implicit declaration
 ## Implicit message declaration
