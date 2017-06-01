@@ -50,22 +50,30 @@ message model='%msg-model'
 model id='process-model'
     message model='msg-model' require='id msg-type payload'
     message model='msg-model' require='ack'
-process model
+process id='login'
+    message model='msg-model' require='id key'
+    message model='msg-model' require='ack' timeout='5second'
 ```
+
 ### Implicit message declaration
 Example:
 ```
 message
     mark value='...'
     data offset='...'
-    mark value='...' offset='...'
+    mark value='...'
+    data offset='...'
 ```
 ### Implicit process declaration
 
 ```
 process
     message model='...' require='key id'
-    message model='...' require='token'
-    message model='...'   
+    message model='...' require='token'    
 ```
 
+### Nested declaration
+```
+message
+    data model='msg-model' length='var' max-length='256byte'    
+```
