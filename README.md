@@ -1,31 +1,32 @@
-# Deplexio
-DEclarative Protocol LEXIOlogy for internet of things
+# Lola
+A  link oriented application connectivity declaration for node connections
 
 # Terminologies
 ## Components of IoT
-1. Node: a device with application connectivity and protocol regulations
-2. Gateway: a device connect the nodes, extract and handle the data in higher-lever abstraction
-3. Declarator: a unit hold the protocol, map the data and process
+1. Node: connectable devices with protocol declaration
+2. Declarator: connectivity resource holder and mapper
 
-## Components of a declarative protocol
-1. Protocol: 
+## Terms and components
+1. AC-Proto: application connectivity protocol set
 2. Message：
-3. Contents: blocks of a message
-4. Mark: 
-5. Data: 
+3. Content: a container of the message
+4. Mark: a content container to hold data and marks
+5. Data: a content container to hold data
 6. Process: message exchange specification
 7. Stage: equivalents of messages in a process
 5. Filter: the pre- / post- processing of the message
-6. Map: a type-data mapping
+6. Map: model / mark / data mapping use $id or $type
 
-# Design principles
-1. No ambigous declaration
-2. Structured declaration
-3. Tree-structure, loop-free
+# Design rules
+1. Identifiable
+2. Iterable and structural
+3. No circular and recursive reference
 
 # Implementation Example (pseudo-markups)
 ## Implicit declaration
-### Message and process
+## Branching
+## Nested declaration
+## 
 ```
 model id='msg-model'
     head 
