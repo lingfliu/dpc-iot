@@ -21,3 +21,5 @@ class Declarator:
 # 5. modbus
 # 6. upnp
 
+
+def acpool_out():
